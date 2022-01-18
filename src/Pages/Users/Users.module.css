@@ -1,0 +1,156 @@
+.users {
+  background-color: #1dd0ab;
+  min-height: 100vh;
+}
+
+.logo {
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 3.8rem;
+  padding-bottom: 6.6rem;
+}
+
+.input {
+  background-color: transparent;
+  padding-bottom: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+
+  color: #fff;
+  width: 34rem;
+  text-align: center;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.input::placeholder {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+
+  color: #fff;
+}
+
+.btn {
+  margin-left: 2rem;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #000000;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  align-self: flex-start;
+}
+
+.body {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3.6rem 4.6rem;
+  background-color: #fff;
+}
+
+.user {
+  width: 100%;
+  color: #000;
+  padding-bottom: 2.8rem;
+  border-bottom: 2px solid #1dd0ab;
+  margin-bottom: 2rem;
+}
+
+.userTitleBox {
+  margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+
+  color: #1dd0ab;
+}
+
+.userTitle {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+
+  color: #0a0a0a;
+}
+
+.company {
+  margin-bottom: 5px;
+}
+
+.categoryBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewMore {
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+
+  color: #1dd0ab;
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.imgBox {
+  width: 6rem;
+  height: auto;
+}
+
+.applyBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.applyBtn {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  background-color: #1dd0ab;
+  outline: none;
+  border: none;
+  align-self: flex-start;
+  display: inline-block;
+  margin: 0 auto;
+}
