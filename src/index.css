@@ -24,11 +24,17 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 500px) {
+  html {
+    font-size: 46.5%;
+  }
+}
+
 body {
   background-color: #1dd0ab;
 
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
 
   color: #ffffff;
 }
@@ -43,17 +49,17 @@ body {
 .lds-ring {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
 }
 .lds-ring div {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #fff;
+  width: 6.4rem;
+  height: 6.4rem;
+  margin: 0.8rem;
+  border: 0.8rem solid #fff;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;

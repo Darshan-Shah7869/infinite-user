@@ -56,11 +56,13 @@ const Users = () => {
                       Gender: {el.gender}
                     </div>
                     <div className={`${styles.company}`}>Age: {el.dob.age}</div>
-                    <div className={`${styles.company}`}>Email: {el.email}</div>
+                    <div className={`${styles.company} ${styles.email}`}>
+                      Email: {el.email}
+                    </div>
                     <div className={`${styles.company}`}>
                       Contact: {el.phone}
                     </div>
-                    <div className={`${styles.company}`}>
+                    <div className={`${styles.company} ${styles.address}`}>
                       {/* {el.location.street} <br /> */}
                       {Object.values(el.location.street).map((el) => (
                         <p>{el}</p>

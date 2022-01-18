@@ -4,8 +4,8 @@
 }
 
 .logo {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
   text-transform: capitalize;
   text-align: center;
   color: #ffffff;
@@ -18,9 +18,9 @@
   padding-bottom: 1rem;
   outline: none;
   border: none;
-  border-bottom: 2px solid #fff;
-  font-size: 18px;
-  line-height: 21px;
+  border-bottom: 0.2rem solid #fff;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
   text-transform: capitalize;
 
   color: #fff;
@@ -37,8 +37,8 @@
 
 .input::placeholder {
   text-align: center;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
   text-transform: capitalize;
 
   color: #fff;
@@ -46,8 +46,8 @@
 
 .btn {
   margin-left: 2rem;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
   /* identical to box height */
 
   text-transform: uppercase;
@@ -72,7 +72,7 @@
   width: 100%;
   color: #000;
   padding-bottom: 2.8rem;
-  border-bottom: 2px solid #1dd0ab;
+  border-bottom: 0.2rem solid #1dd0ab;
   margin-bottom: 2rem;
 }
 
@@ -84,23 +84,23 @@
 }
 
 .status {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
   text-transform: capitalize;
 
   color: #1dd0ab;
 }
 
 .userTitle {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   text-transform: capitalize;
 
   color: #0a0a0a;
 }
 
 .company {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .categoryBox {
@@ -110,8 +110,8 @@
 }
 
 .viewMore {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
   text-decoration-line: underline;
   text-transform: capitalize;
 
@@ -138,8 +138,8 @@
 
 .applyBtn {
   cursor: pointer;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
   /* identical to box height */
 
   text-transform: uppercase;
@@ -153,4 +153,38 @@
   align-self: flex-start;
   display: inline-block;
   margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .userTitleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgBox {
+    margin-top: 2rem;
+  }
+
+  .address {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .body {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .userTitle {
+    text-align: center;
+  }
 }
