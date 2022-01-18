@@ -7,6 +7,8 @@ import styles from "./Homepage.module.css";
 const Homepage = (props) => {
   const history = useHistory();
 
+  // States
+
   const [showLogin, setShowLogin] = useState(true);
   const [loginData, setLoginData] = useState({
     email: "",
@@ -24,6 +26,8 @@ const Homepage = (props) => {
   const [signupEmailError, setSignupEmailError] = useState("");
   const [signupPasswordError, setSignupPasswordError] = useState("");
 
+  // Clear the state when you switch between login and signup
+
   useEffect(() => {
     setLoginData({ email: "", password: "" });
     setSignupData({ name: "", password: "", email: "" });
@@ -32,6 +36,8 @@ const Homepage = (props) => {
   useEffect(() => {
     setLoginEmailError("");
     setLoginPasswordError("");
+
+    // Validation for login
 
     if (loginData.email.length === 0) {
       setLoginEmailError("Email is required");
@@ -50,6 +56,8 @@ const Homepage = (props) => {
     setSignupEmailError("");
     setSignupPasswordError("");
     setSignupNameError("");
+
+    // Validation for Signup
 
     if (signupData.name.length === 0) {
       setSignupNameError("Name is required");
@@ -101,6 +109,7 @@ const Homepage = (props) => {
             <button
               className={`${styles.btn}`}
               onClick={() => {
+                props.auth();
                 history.push("/users");
               }}
               disabled={
@@ -164,6 +173,7 @@ const Homepage = (props) => {
                 signupNameError.length !== 0
               }
               onClick={() => {
+                props.auth();
                 history.push("/users");
               }}
               className={`${styles.btn}`}

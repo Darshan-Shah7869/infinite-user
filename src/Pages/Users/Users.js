@@ -5,14 +5,20 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import styles from "./Users.module.css";
 
 const Users = () => {
+  // State
+
   const [users, setUsers] = useState([]);
+
+  // Function that will get the data and then set it into the state
 
   const getData = () => {
     axios
       .get("https://randomuser.me/api?results=5")
       .then((res) => {
         console.log(res.data.results);
-        setUsers([...users, ...res.data.results]);
+        setTimeout(() => {
+          setUsers([...users, ...res.data.results]);
+        }, 1000);
       })
       .catch((err) => {
         console.log(err);
@@ -34,7 +40,11 @@ const Users = () => {
               dataLength={users.length}
               next={getData}
               hasMore={true}
-              loader={<h4>Loading...</h4>}
+              loader={
+                <h4 style={{ color: "#000", textAlign: "center" }}>
+                  Loading...
+                </h4>
+              }
             >
               {users.map((el) => {
                 return (
