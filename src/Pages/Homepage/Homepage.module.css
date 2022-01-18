@@ -1,0 +1,124 @@
+.popupBox {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent !important;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6ffef;
+  box-shadow: 0rem 0.8rem 1.6rem 0.4rem rgba(0, 0, 0, 0.2);
+  padding: 3.4rem 5.2rem;
+  position: relative;
+}
+
+.title {
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  text-transform: capitalize;
+
+  color: #0a0a0a;
+  margin-bottom: 6.2rem;
+  text-align: center;
+}
+
+.input {
+  background-color: transparent;
+  padding-bottom: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 0.2rem solid #1dd0ab;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-transform: capitalize;
+
+  color: #1dd0ab;
+  width: 34rem;
+}
+
+.input::placeholder {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-transform: capitalize;
+
+  color: #1dd0ab;
+}
+
+.btn {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  background-color: #1dd0ab;
+  outline: none;
+  border: none;
+  align-self: flex-start;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.btn:disabled {
+  background-color: #eee;
+  color: #0a0a0a;
+  cursor: not-allowed;
+}
+
+.error {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-transform: capitalize;
+
+  color: #f58882;
+  text-align: right;
+  margin-bottom: 3.2rem;
+  margin-top: 0.7rem;
+}
+
+.text {
+  text-decoration-line: underline;
+  text-transform: capitalize;
+
+  color: #1dd0ab;
+  text-align: center;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .input {
+    width: 100%;
+  }
+
+  .popup {
+    padding: 3rem 2.4rem;
+  }
+
+  .closeIcon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    width: 2rem;
+    height: auto !important;
+  }
+}
